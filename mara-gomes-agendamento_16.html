@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#b5837a">
+<title>Mara Gomes Nail Design — Agendamento</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Jost',Arial,sans-serif;background:#f7f0ec;color:#2a1f1a}
+
+header{background:linear-gradient(160deg,#c09488,#b5837a,#8a5c52);padding:36px 20px 44px;text-align:center}
+.lw{display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.lc{width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.13);border:2px solid rgba(255,255,255,.38);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:600;color:#fff;margin-right:14px;flex-shrink:0}
+.lt h1{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:600;color:#fff;line-height:1}
+.lt span{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.78);display:block;margin-top:4px}
+.htag{display:inline-block;background:#b8953a;color:#fff;font-size:.65rem;letter-spacing:3px;text-transform:uppercase;padding:4px 14px;border-radius:2px;margin-bottom:8px}
+header h2{font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:300;color:#fff;line-height:1.2}
+header h2 em{font-style:italic;color:#d4b060}
+
+main{max-width:680px;margin:0 auto;padding:24px 14px 80px}
+.card{background:#fff;border-radius:8px;box-shadow:0 2px 16px rgba(42,31,26,.08);padding:20px 16px;margin-bottom:16px}
+.ct{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:#6b4e42;border-bottom:1px solid #e8cfc7;padding-bottom:8px;margin-bottom:6px}
+.cs{font-size:.67rem;letter-spacing:2px;text-transform:uppercase;color:#c8a098;margin-bottom:16px;display:block}
+.sec{font-size:.67rem;letter-spacing:2px;text-transform:uppercase;color:#c8a098;padding:10px 0 8px;border-top:1px solid #e8cfc7;margin-top:4px;display:block}
+
+/* SERVIÇOS — botão <a href> é o elemento mais clicável no iOS Safari */
+a.op{
+  display:flex;align-items:center;gap:12px;
+  padding:14px;margin-bottom:6px;
+  border:1.5px solid #e8cfc7;border-radius:8px;
+  background:#fdf8f6;
+  text-decoration:none;color:#2a1f1a;
+  cursor:pointer;
+  -webkit-tap-highlight-color:rgba(200,160,152,.3);
+}
+a.op.on{border-color:#c8a098;background:#f0e4e0}
+.dot{width:20px;height:20px;border:2px solid #bbb;border-radius:50%;flex-shrink:0;background:#fff;display:flex;align-items:center;justify-content:center}
+.dot i{width:10px;height:10px;border-radius:50%;background:transparent;display:block}
+a.op.on .dot{border-color:#c8a098}
+a.op.on .dot i{background:#c8a098}
+.onm{flex:1;font-size:.9rem;font-weight:500;color:#2a1f1a}
+.ods{display:block;font-size:.72rem;color:#6b4e42;margin-top:2px;font-weight:400}
+.opr{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:#b8953a;white-space:nowrap}
+
+/* FORMULÁRIO */
+.fg{margin-bottom:14px}
+.lb{display:block;font-size:.67rem;letter-spacing:1.5px;text-transform:uppercase;color:#6b4e42;margin-bottom:6px}
+input[type=text],input[type=tel],input[type=date],textarea{width:100%;padding:14px;border:1.5px solid #e8cfc7;border-radius:6px;background:#fdf8f6;color:#2a1f1a;font-family:'Jost',Arial,sans-serif;font-size:16px;outline:none;-webkit-appearance:none;display:block;box-sizing:border-box}
+input:focus,textarea:focus{border-color:#c8a098;background:#fff}
+textarea{resize:vertical;min-height:72px}
+
+/* HORÁRIOS */
+.hgrid{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+a.hbtn{flex:0 0 calc(33.33% - 6px);display:block;padding:13px 4px;text-align:center;border:1.5px solid #e8cfc7;border-radius:6px;background:#fdf8f6;color:#6b4e42;font-family:'Jost',Arial,sans-serif;font-size:.82rem;min-height:48px;line-height:22px;text-decoration:none;-webkit-tap-highlight-color:rgba(200,160,152,.3);cursor:pointer}
+a.hbtn.on{background:#c8a098;border-color:#c8a098;color:#fff;font-weight:600}
+a.hbtn.ocup{opacity:.35;pointer-events:none}
+
+a.besp{display:block;width:100%;margin-top:10px;padding:14px;background:transparent;color:#b8953a;border:1.5px dashed #b8953a;border-radius:6px;font-family:'Jost',Arial,sans-serif;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;min-height:48px;text-align:center;text-decoration:none;-webkit-tap-highlight-color:rgba(184,149,58,.2);cursor:pointer;display:flex;align-items:center;justify-content:center}
+a.besp.on{background:#b8953a;color:#fff;border-style:solid}
+.aviso{font-size:.75rem;color:#b8953a;margin-top:8px;padding:8px 10px;background:#fff8ee;border-left:3px solid #b8953a;border-radius:0 4px 4px 0;line-height:1.6}
+
+/* RESUMO */
+.rtable{width:100%;border-collapse:collapse;font-size:.9rem}
+.rtable th{padding:10px 12px;text-align:left;background:#f0e4e0;color:#6b4e42;font-weight:600;border-bottom:2px solid #c8a098}
+.rtable th:last-child{text-align:right}
+.rtable td{padding:12px;border-bottom:1px solid #e8cfc7;color:#2a1f1a}
+.rtable td:last-child{text-align:right;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:#b8953a}
+.rtable tfoot td{background:#c8a098;color:#fff;font-weight:700;border:none}
+.rtable tfoot td:last-child{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:#fff}
+
+a.bconf{display:block;width:100%;padding:17px;margin-top:16px;background:#b8953a;color:#fff;border:none;border-radius:6px;font-family:'Jost',Arial,sans-serif;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;min-height:56px;text-align:center;text-decoration:none;-webkit-tap-highlight-color:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center}
+a.bconf:active{opacity:.82}
+
+.mov{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(42,31,26,.55);z-index:100;overflow-y:auto;padding:40px 16px;-webkit-overflow-scrolling:touch}
+.mbox{background:#fff;border-radius:8px;padding:30px 24px;max-width:420px;width:100%;margin:0 auto;text-align:center}
+.mico{font-size:2.6rem;margin-bottom:10px}
+.mbox h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:#6b4e42;margin-bottom:10px}
+.mbox p{font-size:.85rem;color:#6b4e42;line-height:1.6}
+.mdet{background:#f7f0ec;border-radius:5px;padding:14px;margin:16px 0;text-align:left;font-size:.82rem;color:#2a1f1a;line-height:1.9}
+a.mfech{display:inline-block;padding:12px 32px;background:#c8a098;color:#fff;border-radius:5px;font-family:'Jost',Arial,sans-serif;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;min-height:44px;text-decoration:none;cursor:pointer}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:#2a1f1a;color:#fff;padding:12px 22px;border-radius:5px;font-size:.83rem;z-index:200;max-width:88%;text-align:center;transition:transform .3s;pointer-events:none}
+.toast.on{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="lw">
+    <div class="lc">M</div>
+    <div class="lt"><h1>Mara Gomes</h1><span>Nail Designer</span></div>
+  </div>
+  <div><span class="htag">Tabela 2026</span></div>
+  <h2>Agende seu <em>horario</em></h2>
+</header>
+
+<main>
+
+<div class="card">
+  <div class="ct">1. Escolha o Servico</div>
+  <span class="cs">Toque para selecionar</span>
+
+  <span class="sec">Manicure Tradicional</span>
+  <a href="javascript:void(0)" class="op" onclick="sel(this,'Manicure Tradicional - Maos',35)"><div class="dot"><i></i></div><span class="onm">Maos</span><span class="opr">R$35</span></a>
+  <a href="javascript:void(0)" class="op" onclick="sel(this,'Manicure Tradicional - Pes',45)"><div class="dot"><i></i></div><span class="onm">Pes</span><span class="opr">R$45</span></a>
+  <a href="javascript:void(0)" class="op" onclick="sel(this,'Manicure Tradicional - Combo',70)"><div class="dot"><i></i></div><span class="onm">Combo - Maos e Pes</span><span class="opr">R$70</span></a>
+
+  <span class="sec">Esmaltacao em Gel</span>
+  <a href="javascript:void(0)" class="op" onclick="sel(this,'Esmaltacao em Gel - Maos',69)"><div class="dot"><i></i></div><span class="onm">Maos<span class="ods">Brilho intenso, ate 2 semanas</span></span><span class="opr">R$69</span></a>
+  <a href="javascript:void(0)" class="op" onclick="sel(this,'Esmaltacao em Gel - Pes',79)"><div class="dot"><i></i></div><span class="onm">Pes<span class="ods">Brilho intenso, ate 2 semanas</span></span><span class="opr">R$79</span></a>
+
+  <span class="sec">Outros Servicos</span>
+  <a href="javascript:void(0)" class="op" onclick="sel(this,'Blindagem + Esmaltacao em Gel',95)"><div class="dot"><i></i></div><span class="onm">Blindagem + Esmaltacao em Gel<span class="ods">Protege e fortalece a unha natural</span></span><span class="opr">R$95</span></a>
+  <a href="javascript:void(0)" class="op" onclick="sel(this,'Banho de Gel + Esmaltacao em Gel',130)"><div class="dot"><i></i></div><span class="onm">Banho de Gel + Esmaltacao em Gel<span class="ods">Estrutura e durabilidade prolongada</span></span><span class="opr">R$130</span></a>
+  <a href="javascript:void(0)" class="op" onclick="sel(this,'Alongamento no Molde F1',169)"><div class="dot"><i></i></div><span class="onm">Alongamento no Molde F1<span class="ods">Rapido, elegante e resistente</span></span><span class="opr">R$169</span></a>
+  <a href="javascript:void(0)" class="op" onclick="sel(this,'Cutilagem com Cera',15)"><div class="dot"><i></i></div><span class="onm">Cutilagem com Cera<span class="ods">Remocao delicada com broca e tesoura</span></span><span class="opr">R$15</span></a>
+</div>
+
+<div class="card">
+  <div class="ct">Seus Dados</div>
+  <span class="cs">Preencha para confirmar</span>
+  <div class="fg"><label class="lb" for="f-nome">Nome completo</label><input type="text" id="f-nome" placeholder="Seu nome" autocomplete="name"></div>
+  <div class="fg"><label class="lb" for="f-tel">WhatsApp</label><input type="tel" id="f-tel" placeholder="(11) 9 0000-0000" autocomplete="tel"></div>
+  <div class="fg"><label class="lb" for="f-nasc">Data de Nascimento</label><input type="date" id="f-nasc"></div>
+  <div class="fg"><label class="lb" for="f-obs">Observacao (opcional)</label><textarea id="f-obs" placeholder="Ex: tenho alergia a algum produto..."></textarea></div>
+</div>
+
+<div class="card">
+  <div class="ct">Data e Horario</div>
+  <span class="cs">Escolha quando prefere</span>
+  <div class="fg"><label class="lb" for="f-data">Data</label><input type="date" id="f-data" onchange="calc()"></div>
+  <div class="fg">
+    <label class="lb">Horario disponivel</label>
+    <div class="hgrid" id="hgrid"></div>
+    <a href="javascript:void(0)" class="besp" id="besp" onclick="espToggle()">&#9733; Horario Especial</a>
+    <div id="esp-area" style="display:none">
+      <input type="text" id="f-esp" placeholder="Ex: sabado manha, 20h00..." style="margin-top:10px">
+      <p class="aviso">&#9888; Horario especial tem custo adicional de R$30,00. Entraremos em contato para confirmar.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="ct">Resumo do Pedido</div>
+  <span class="cs">Atualizado ao selecionar</span>
+  <table class="rtable">
+    <thead><tr><th>Descricao</th><th>Valor</th></tr></thead>
+    <tbody>
+      <tr><td id="r-nm"><em style="color:#aaa">Nenhum servico selecionado</em></td><td id="r-vl">—</td></tr>
+      <tr id="r-esp" style="display:none"><td style="color:#b8953a">Taxa Horario Especial</td><td style="color:#b8953a">R$ 30,00</td></tr>
+    </tbody>
+    <tfoot><tr><td>TOTAL</td><td id="r-tot">R$ 0,00</td></tr></tfoot>
+  </table>
+  <a href="javascript:void(0)" class="bconf" onclick="confirmar()">Confirmar Agendamento</a>
+</div>
+
+</main>
+
+<div class="mov" id="modal">
+  <div class="mbox">
+    <div class="mico">&#128133;</div>
+    <h3>Agendamento Confirmado!</h3>
+    <p>Obrigada pela preferencia. Em breve entraremos em contato pelo WhatsApp para confirmar.</p>
+    <div class="mdet" id="mdet"></div>
+    <a href="javascript:void(0)" class="mfech" onclick="fechar()">Fechar</a>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+var _nm='',_vl=0,_esp=false,_hr='';
+var FORMS='https://docs.google.com/forms/u/0/d/1HuQJiZOp22Mmm5GmxBaxD_ipKTA-WC9Boy0hUZtgJUw/formResponse';
+var EN={nome:'entry.867450097',tel:'entry.1812276814',sv:'entry.250496502',data:'entry.2025797453',hora:'entry.477773930',obs:'entry.2125401779'};
+var HORAS=['08:00','10:00','14:00','16:00','17:00'];
+
+function g(id){return document.getElementById(id)}
+function fmt(n){return 'R$ '+n.toFixed(2).replace('.',',')}
+function fmtD(v){if(!v)return'';var s=v.split('-');return s[2]+'/'+s[1]+'/'+s[0]}
+
+function sel(el,nm,vl){
+  var ops=document.querySelectorAll('a.op');
+  for(var i=0;i<ops.length;i++)ops[i].className='op';
+  el.className='op on';
+  _nm=nm;_vl=vl;
+  calc();
+}
+
+function calc(){
+  var tot=_vl+(_esp?30:0);
+  if(_vl>0){
+    g('r-nm').innerHTML=_nm;
+    g('r-vl').innerHTML=fmt(_vl);
+    g('r-tot').innerHTML=fmt(tot);
+  }else{
+    g('r-nm').innerHTML='<em style="color:#aaa">Nenhum servico selecionado</em>';
+    g('r-vl').innerHTML='—';
+    g('r-tot').innerHTML='R$ 0,00';
+  }
+  g('r-esp').style.display=_esp?'':'none';
+}
+
+function buildH(){
+  var div=g('hgrid');div.innerHTML='';
+  for(var i=0;i<HORAS.length;i++){
+    var h=HORAS[i];
+    var a=document.createElement('a');
+    a.href='javascript:void(0)';
+    a.className='hbtn';
+    a.innerHTML=h;
+    (function(hora,el){
+      el.onclick=function(){
+        var todos=document.querySelectorAll('a.hbtn');
+        for(var k=0;k<todos.length;k++)todos[k].className='hbtn';
+        el.className='hbtn on';
+        g('besp').className='besp';
+        g('esp-area').style.display='none';
+        _esp=false;_hr=hora;calc();
+      };
+    })(h,a);
+    div.appendChild(a);
+  }
+}
+
+function espToggle(){
+  var todos=document.querySelectorAll('a.hbtn');
+  for(var k=0;k<todos.length;k++)todos[k].className='hbtn';
+  if(_esp){
+    g('besp').className='besp';
+    g('esp-area').style.display='none';
+    _esp=false;_hr='';
+  }else{
+    g('besp').className='besp on';
+    g('esp-area').style.display='block';
+    _esp=true;_hr='__esp__';
+  }
+  calc();
+}
+
+function confirmar(){
+  var nome=(g('f-nome').value||'').replace(/^\s+|\s+$/g,'');
+  var tel=(g('f-tel').value||'').replace(/^\s+|\s+$/g,'');
+  var nasc=g('f-nasc').value||'';
+  var data=g('f-data').value||'';
+  var obs=(g('f-obs').value||'').replace(/^\s+|\s+$/g,'');
+  if(!nome)return toast('Informe seu nome.');
+  if(!tel)return toast('Informe seu WhatsApp.');
+  if(!_vl)return toast('Selecione um servico.');
+  if(!data)return toast('Escolha uma data.');
+  if(!_hr)return toast('Escolha um horario.');
+  var hrF=_hr;
+  if(_hr==='__esp__'){
+    var esp=(g('f-esp').value||'').replace(/^\s+|\s+$/g,'');
+    if(!esp)return toast('Descreva o horario especial.');
+    hrF='Especial (+R$30): '+esp;
+  }
+  var tot=_vl+(_esp?30:0);
+  var svc=_nm+' - '+fmt(tot);
+  var obsF=(nasc?'Nasc: '+fmtD(nasc)+(obs?' | '+obs:''):obs)||'-';
+  var body=encodeURIComponent(EN.nome)+'='+encodeURIComponent(nome)+'&'
+          +encodeURIComponent(EN.tel)+'='+encodeURIComponent(tel)+'&'
+          +encodeURIComponent(EN.sv)+'='+encodeURIComponent(svc)+'&'
+          +encodeURIComponent(EN.data)+'='+encodeURIComponent(fmtD(data))+'&'
+          +encodeURIComponent(EN.hora)+'='+encodeURIComponent(hrF)+'&'
+          +encodeURIComponent(EN.obs)+'='+encodeURIComponent(obsF);
+  if(window.fetch){fetch(FORMS,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body}).catch(function(){});}
+  else{var x=new XMLHttpRequest();x.open('POST',FORMS,true);x.setRequestHeader('Content-Type','application/x-www-form-urlencoded');try{x.send(body);}catch(e){}}
+  g('mdet').innerHTML='<b>Cliente:</b> '+nome+'<br><b>WhatsApp:</b> '+tel+'<br>'+(nasc?'<b>Nascimento:</b> '+fmtD(nasc)+'<br>':'')+'<b>Servico:</b> '+svc+'<br><b>Data:</b> '+fmtD(data)+'<br><b>Horario:</b> '+hrF+(obs?'<br><b>Obs:</b> '+obs:'');
+  g('modal').style.display='block';
+  window.scrollTo(0,0);
+}
+
+function fechar(){g('modal').style.display='none'}
+function toast(msg){var t=g('toast');t.innerHTML=msg;t.className='toast on';setTimeout(function(){t.className='toast'},2800)}
+
+var hj=new Date();
+g('f-data').setAttribute('min',hj.getFullYear()+'-'+('0'+(hj.getMonth()+1)).slice(-2)+'-'+('0'+hj.getDate()).slice(-2));
+buildH();
+</script>
+</body>
+</html>
